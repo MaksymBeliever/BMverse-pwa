@@ -1,0 +1,82 @@
+import { StyleSheet } from 'react-360';
+import variables from '../constants/Variables';
+
+export const styles = StyleSheet.create({
+    panel: {
+        width: 1000,
+        height: 600,
+        backgroundColor: variables.backgrounds.darkGrey,
+        opacity: 0.8,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: variables.borderRadiuses.br10,
+    },
+    logo: {
+        width: 140,
+        height: 140,
+        marginBottom: variables.margins.mb20,
+    },
+    title: {
+        fontSize: variables.fontSizes.fz35,
+        fontWeight: '600',
+        lineHeight: 32,
+        color: variables.colors.textWhite,
+        marginBottom: variables.margins.mb30,
+    },
+    form: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 600,
+        height: 200,
+        backgroundColor: variables.backgrounds.grey,
+        borderRadius: variables.borderRadiuses.br10,
+        padding: variables.paddings.p15,
+    },
+    inputWrapper: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        marginBottom: variables.margins.mb20,
+    },
+    input: {
+        display: 'flex',
+        justifyContent: 'center',
+        width: 400,
+        height: 40,
+        backgroundColor: variables.backgrounds.darkGrey,
+        borderRadius: variables.borderRadiuses.br10,
+        paddingLeft: variables.paddings.pl15,
+    },
+    inputRed: {
+        display: 'flex',
+        justifyContent: 'center',
+        width: 400,
+        height: 40,
+        backgroundColor: variables.backgrounds.darkGrey,
+        borderRadius: variables.borderRadiuses.br10,
+        paddingLeft: variables.paddings.pl15,
+        borderStyle: 'solid',
+        borderWidth: 2,
+        borderColor: variables.colors.colorRed,
+    },
+    label: {
+        lineHeight: 32,
+        color: variables.colors.textWhite,
+        marginRight: variables.margins.mr20,
+    },
+    button: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: variables.backgrounds.blue,
+        borderRadius: variables.borderRadiuses.br10,
+        width: 500,
+        height: 40,
+    },
+    buttonText: {
+        color: variables.colors.textWhite,
+    },
+});
