@@ -1,4 +1,5 @@
 {
+  "homepage": "https://MaksymBeliever.github.io/BMverse-pwa",
   "name": "react-360-ts",
   "author": "Kevin O'Rourke <orourke.kevin@gmail.com>",
   "description": "Utilities & helpers for increased type safety in a React + Redux application",
@@ -21,13 +22,14 @@
   },
   "scripts": {
     "start": "node node_modules/react-360/scripts/packager.js",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
   },
   "dependencies": {
-    "formik": "^2.2.9",
     "native-base": "^3.4.9",
     "react": "16.3.2",
     "react-360": "~1.1.0",
@@ -35,7 +37,6 @@
     "react-360-web": "~1.1.0",
     "react-native": "~0.55.4",
     "react-native-fast-image": "^8.5.11",
-    "react-router": "^6.3.0",
     "three": "^0.87.0",
     "webvr-polyfill": "^0.10.12"
   },
@@ -44,6 +45,7 @@
     "@types/react-native": "^0.57.42",
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
+    "gh-pages": "^4.0.0",
     "jest": "^19.0.2",
     "react-devtools": "^2.5.2",
     "react-native-typescript-transformer": "^1.2.12",
